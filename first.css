@@ -1,0 +1,521 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    height: 100%;
+}
+.navbar{
+    height: 80px;
+    background: linear-gradient(to top right,white,lightblue,black);
+    display: flex;
+    position: sticky;
+}
+.img{
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    background-image: url("https://img.freepik.com/premium-vector/sk-logo-design_731343-111.jpg");
+    background-position: 50%;
+    background-size: 90px;
+}
+.arts{
+   
+    height: 50px;
+    font-size: 30px;  
+}
+.parent{
+    width: 500px;
+   display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 21px;
+    
+}
+.one{
+   padding: 250px;
+}
+select{
+    margin-top: 40px;
+    height: 20px;
+    display: none;
+}
+@media (max-width: 620px){
+    select{
+        display: block;
+    }
+    .parent{
+        display: none;
+    }
+}
+.pic{
+    width: 100%;
+    height: 90svh;
+    background-image: url("ceil_fan-transformed.webp");
+    background-size: 100% 100%;
+}
+.pic:hover{
+    background-image: url("bg\ pic.jpg");
+    background-position: 100%;
+}
+.txt{
+    width: 400px;
+    height: 200px;
+    font-size: 45px;
+    color: rgb(36, 80, 226);
+    font-style: oblique;
+    text-shadow: 2px 2px white;
+    position: absolute;
+    padding-top: 120px;
+    padding-left: 220px;
+}
+.txt1{
+    width: 500px;
+    height: 40px;
+    font-size: 22px;
+    color: rgb(36, 80, 226);
+    text-shadow: 2px 2px white;
+    position: absolute;
+   padding-top: 230px;
+    padding-left: 250px;
+}
+.explore{
+    display: flex;
+    font-size: 32px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.explore1{
+    color: red;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.rcrl{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.butt{
+    height: 30px;
+    width: 90px;
+    border-radius: 20px;
+    color: black;
+    border:2px solid red;
+    text-align: center;
+    background-color: white;
+}
+.butt:hover{
+    background-color: red;
+}
+.matt{
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 15px;
+    color: gray;
+}
+.div{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.div1{
+    margin-top: 25px;
+    height: 250px;
+    width: 250px;
+    background-image: url("div1\ fan.jpg");
+    background-position: 100%;
+    background-size: 300px;
+    border-radius: 20px;
+}
+.div2{
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    background-image: url("div2\ fan.webp");
+    background-position: 35%;
+    background-size: 390px;
+    box-shadow: 0 0 8px 8px gray
+}
+.div3{
+    height: 250px;
+    margin-top: 25px;
+    width: 250px;
+    background-image: url("div3\ fan.webp");
+    background-position: 40%;
+    background-size: 300px;
+    border-radius: 20px; 
+}
+.div2:hover{
+    transform: scale(1.1);
+}
+.client{
+    display: flex;
+    font-size: 32px;
+    align-items: center;
+    justify-content: center;
+}
+.our {
+    display: flex;
+    margin-top: 20px;
+}
+.clnt{
+    color: red;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 30px;
+}
+.card1{
+    height: 250px;
+    width: 350px;
+    border: 2px solid grey;
+    background-image: url("card1.jpg");
+    background-position: 90%;
+    background-size: 250px;
+}
+.card2{
+    height: 250px;
+    width: 350px;
+    background-image: url("card2.jpg");
+     background-position: 100%;
+    background-size: 390px;
+    border: 2px solid grey;
+}
+.card3{
+    height: 250px;
+    width: 350px;
+    background-image: url("card3.avif");
+    background-position: 100%;
+   background-size: 390px;
+    border: 2px solid grey;
+}
+.card4{
+    height: 250px;
+    width: 350px;
+    background-image: url("card4.avif");
+    background-position: 100%;
+   background-size: 390px;
+    border: 2px solid grey;
+}
+.card5{
+    height: 250px;
+    width: 350px;
+    background-image: url("card5.avif");
+      background-position: 100%;
+   background-size: 390px;
+    border: 2px solid grey;
+}
+.slides{
+    height: 100px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow: hidden;
+}
+.slides .slide{
+    animation: scroll 30s linear infinite;
+    display: flex;
+    width: calc(100px *  14);
+}
+@keyframes scroll{
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translateX(calc(-100px * 20));
+    }
+}
+.slides img{
+    max-width: 200px;
+}
+.abt{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-evenly;
+    background-color: black;
+}
+.abt1{
+    
+    /* margin-top: 60px;
+    margin-left: 40px; */
+    border-radius: 20px;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    border: 2px solid white;
+}
+.abt2{
+    height: 50px;
+    /* width: 850px; */
+    /* margin-left: 30px; */
+    margin-top: 20px;
+    border-radius: 30px;
+    display:flex;
+    flex-wrap: wrap;
+    background-color: lightgray;
+    align-items: center;
+    justify-content: space-around;
+}
+.story{
+    height: 45px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    color: black;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    
+}
+.story:hover{
+    background-color: red;
+}
+.values{
+    height: 45px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    color: black;
+    border-radius: 20px;
+    justify-content: center;
+   
+}
+.values:hover{
+    background-color: red;
+}
+.vismis{
+    height: 45px;
+    width: 150px;
+    align-items: center;
+    color: black;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    
+}
+.vismis:hover{
+    background-color: red;
+}
+.fourp{
+    height: 45px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    color: black;
+    border-radius: 20px;
+    justify-content: center;
+}
+.fourp:hover{
+    background-color: red;
+}
+.abtus{
+    height: 100%;
+    margin-top: 30px; 
+    margin-left: 30px; 
+    color: red;
+    font-size: 25px;
+}
+.matt1{
+    margin-top: 20px;
+    font-size: 15px;
+    color: black;
+}
+.buttons{
+    margin-top:10px;
+    justify-content: space-between;
+    display: flex;
+}
+.mat{
+   /* height: 400px; */
+   display: flex;
+   flex-wrap: wrap;
+}
+.collection{
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 90px;
+    font-size: 25px;
+}
+.latest{
+   margin-left:20px;
+   color: red;
+    font-size: 25px;
+}
+.matter
+{
+    margin-left: 20px;
+    color: grey;
+    margin-top: 30px;
+    font-size: 18px;
+}
+.osp{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+@media (max-width:310px){
+    .osp{
+        flex-direction: column;
+    }
+}
+.out{
+    width: 80px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sign{
+    width: 80px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pro{
+    width: 80px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.out:hover{
+    transform: scale(1.1);
+    background-color: red;
+}
+.sign:hover{
+    transform: scale(1.1);
+    background-color: red;
+}
+.pro:hover{
+    transform: scale(1.1);
+    background-color: red;
+}
+
+.id{
+    width: 100px;
+    height: 35px;
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+    border-radius: 20px;
+    margin-left: 80px;
+}
+/* .buk{
+    height: 300px;
+    width: 300px;
+    align-items: center;
+    background-image: url("buk.png");
+    background-position: 50%;
+    background-size: 700px;
+    justify-content: center;
+    padding-top: 50px;
+    image-orientation: 1deg;
+} */
+.end{
+    border: 2px solid black;
+    /* height: 400px; */
+   width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+.fend{
+    height: 200px;
+    width: 250px;
+    margin-left: 20px;
+    margin-top: 100px;
+    display: flex;
+    border: 2px solid black ;
+}
+.send{
+    height: 300px;
+    width: 600px; 
+    border: 2px solid black;
+    background-color: black;
+}
+.loc{
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.send1{
+    display: flex;
+}
+.add{
+    padding-top: 40px;
+    color: white;
+    padding-left: 20px;
+}
+.send2{
+    margin-top: 60px;
+    margin-left: 50px;
+    display: flex;
+}
+.mob{
+    padding-left: 20px; 
+    color: white;
+}
+.socme{
+    padding-top: 50px;
+    color: white;
+    font-size: 13px;
+    padding-left: 48px;
+    display: flex;
+    gap: 10px;
+}
+.s{
+    font-size: 80px;
+    color: white;
+    padding-left: 20px;
+    text-shadow: 3px 3px white;
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.k{
+    font-size: 80px;
+    color: white;
+    padding-left: 0px;
+    text-shadow: 3px 3px white;
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.arts{
+    font-size: 50px;
+    color: white;
+    padding-top: 30px;
+    color: red;
+}
